@@ -1,0 +1,28 @@
+<!-- nav.html -->
+<nav>
+    <div class="container">
+        <a href="index.html" class="logo">
+            <!-- Update the src attribute with the path to your new logo image -->
+            <img src="images\DesiWear Logo.png" alt="DesiWear"></a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    // Listen for messages from the parent page
+    window.addEventListener('message', function (event) {
+        if (event.data.type === 'adjustHeight') {
+            const iframe = document.querySelector('iframe');
+            if (iframe) {
+                iframe.style.height = event.data.height;
+            }
+        }
+    });
+</script>

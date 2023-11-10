@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Men - DesiWear</title>
+</head>
+<body>
+    <iframe src="nav.html" frameborder="0"></iframe>
+    <header>
+        <div class="container">
+            <h1>Men's Clothing</h1>
+            <p>Discover our collection of traditional men's clothing.</p>
+        </div>
+    </header>
+    <section class="product-listing">
+        <div class="container">
+            <div class="product-card">
+                <img src="images/men_product1.jpeg" alt="Men's Kurta Shalwar">
+                <img src="images/Men's Kurta Shalwar.jpeg" alt="Men Kurta Shalwar">
+                <h2>Men's Kurta Shalwar</h2>
+                <p>Elegant kurta shalwar for men.</p>
+                <span>$39.99</span>
+                <button onclick="addToCart('Men\'s Kurta Shalwar', 39.99)">Add to Cart</button>
+                <button onclick="removeFromCart('Men\'s Kurta Shalwar', 39.99)">Remove from Cart</button>
+            </div>
+
+            <!-- Add more product cards for men's clothing as needed -->
+        </div>
+    </section>
+
+ <!-- Shopping Cart -->
+ <aside class="shopping-cart">
+    <h2>Shopping Cart List</h2>
+    <ul id="cart-items">
+        <!-- Cart items will be displayed here -->
+    </ul>
+    <h3>Total Price: $<span id="cart-total">0.00</span></h3>
+</aside>
+
+    <footer>
+        <div class "container">
+            <p>&copy; 2023 DesiWear. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
